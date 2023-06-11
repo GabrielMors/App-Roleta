@@ -16,6 +16,7 @@
 		C477575D2A361F7400A3880E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C477575C2A361F7400A3880E /* Alert.swift */; };
 		C47757602A36205400A3880E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C477575F2A36205400A3880E /* Person.swift */; };
 		C47757632A3620FC00A3880E /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47757622A3620FC00A3880E /* EmptyTableViewCell.swift */; };
+		C47757652A3625A300A3880E /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47757642A3625A300A3880E /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C477575C2A361F7400A3880E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C477575F2A36205400A3880E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C47757622A3620FC00A3880E /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		C47757642A3625A300A3880E /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C47757622A3620FC00A3880E /* EmptyTableViewCell.swift */,
+				C47757642A3625A300A3880E /* PersonTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				C47757422A35DD2C00A3880E /* AppDelegate.swift in Sources */,
 				C477575D2A361F7400A3880E /* Alert.swift in Sources */,
 				C47757632A3620FC00A3880E /* EmptyTableViewCell.swift in Sources */,
+				C47757652A3625A300A3880E /* PersonTableViewCell.swift in Sources */,
 				C47757442A35DD2C00A3880E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
