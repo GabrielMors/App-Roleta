@@ -13,7 +13,10 @@ class HomeViewController: UIViewController {
     var listPerson: [Person] = []
     var listImage: [String] = ["Image-1", "Image-2", "Image-3", "Image-4", "Image-5"]
     var person: Person?
-    var alert: AlertController?
+    lazy var alert: AlertController = {
+        let alert = AlertController(controller: self)
+        return alert
+    }()
     
     override func loadView() {
         screen = HomeScreen()
@@ -30,6 +33,7 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .black
         screen?.configTableView(delegate: self, dataSource: self)
         screen?.textFieldDelegate(delegate: self)
+        screen?.delegate(delegate: self)
         blockedDrawNumberButton()
     }
     
@@ -46,17 +50,17 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if listPerson[indexPath.row] === person {
-//            alert?.showAlert(title: "Muitoo bom", message: "Agora é sua vez, pague a conta 🤪")
-//            listPerson.removeAll()
-//        } else {
-//            alert?.showAlert(title: "Uffa", message: "você escapou dessa vez 🥳")
-//            listPerson.remove(at: indexPath.row)
-//        }
-//        blockedDrawNumberButton()
-//        screen?.tableView.reloadData()
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let person = person, listPerson[indexPath.row] === person {
+            alert.showAlert(title: "Muitoo bom", message: "Agora é sua vez, pague a conta 🤪")
+            listPerson.removeAll()
+        } else {
+            alert.showAlert(title: "Uffa", message: "você escapou dessa vez 🥳")
+            listPerson.remove(at: indexPath.row)
+        }
+        blockedDrawNumberButton()
+        screen?.tableView.reloadData()
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -100,5 +104,12 @@ extension HomeViewController: UITextFieldDelegate {
         }
         textField.text = ""
         return true
+    }
+}
+
+extension HomeViewController: HomeScreenProtocol {
+    
+    func tappedRaffleNumberButton() {
+        person = listPerson.randomElement()
     }
 }
