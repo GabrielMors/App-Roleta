@@ -9,7 +9,7 @@ import UIKit
 
 class EmptyTableViewCell: UITableViewCell {
 
-    static let identefier: String = String(describing: EmptyTableViewCell.self)
+    static let identifier: String = String(describing: EmptyTableViewCell.self)
     
     lazy var logoImageView: UIImageView = {
         let image = UIImageView()
@@ -25,6 +25,7 @@ class EmptyTableViewCell: UITableViewCell {
         label.numberOfLines = 0
         label.text = "Insira os participantes para iniciar uma roleta russa!"
         label.textColor = .white
+        label.textAlignment = .center
         return label
     }()
     

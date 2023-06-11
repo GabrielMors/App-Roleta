@@ -57,8 +57,8 @@ class HomeScreen: UIView {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.showsVerticalScrollIndicator = false
         tableView.backgroundColor = .black
-//        tableView.register(<#T##UINib?#>, forCellReuseIdentifier: <#T##String#>)
-        
+        tableView.register(EmptyTableViewCell.self, forCellReuseIdentifier: EmptyTableViewCell.identifier)
+        tableView.register(PersonTableViewCell.self, forCellReuseIdentifier: PersonTableViewCell.identifier)
         return tableView
     }()
     
@@ -78,6 +78,10 @@ class HomeScreen: UIView {
     public func configTableView(delegate: UITableViewDelegate, dataSource: UITableViewDataSource) {
         tableView.delegate = delegate
         tableView.dataSource = dataSource
+    }
+    
+    public func textFieldDelegate(delegate: UITextFieldDelegate) {
+        nameTextField.delegate = delegate
     }
     
     required init?(coder: NSCoder) {
