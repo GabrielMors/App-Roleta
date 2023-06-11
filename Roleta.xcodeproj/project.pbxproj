@@ -13,6 +13,7 @@
 		C477574B2A35DD2E00A3880E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C477574A2A35DD2E00A3880E /* Assets.xcassets */; };
 		C477574E2A35DD2E00A3880E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C477574C2A35DD2E00A3880E /* LaunchScreen.storyboard */; };
 		C47757592A35E64B00A3880E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47757582A35E64B00A3880E /* HomeScreen.swift */; };
+		C477575D2A361F7400A3880E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C477575C2A361F7400A3880E /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C477574D2A35DD2E00A3880E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C477574F2A35DD2E00A3880E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C47757582A35E64B00A3880E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		C477575C2A361F7400A3880E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		C47757402A35DD2C00A3880E /* Roleta */ = {
 			isa = PBXGroup;
 			children = (
+				C477575B2A361F6100A3880E /* Alert */,
 				C47757572A35E63200A3880E /* Home */,
 				C47757552A35DFA000A3880E /* Resource */,
 				C477574F2A35DD2E00A3880E /* Info.plist */,
@@ -89,6 +92,14 @@
 				C47757582A35E64B00A3880E /* HomeScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		C477575B2A361F6100A3880E /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C477575C2A361F7400A3880E /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				C47757592A35E64B00A3880E /* HomeScreen.swift in Sources */,
 				C47757462A35DD2C00A3880E /* HomeViewController.swift in Sources */,
 				C47757422A35DD2C00A3880E /* AppDelegate.swift in Sources */,
+				C477575D2A361F7400A3880E /* Alert.swift in Sources */,
 				C47757442A35DD2C00A3880E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
