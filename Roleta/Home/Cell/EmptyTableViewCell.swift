@@ -31,6 +31,13 @@ class EmptyTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .black
+        addSubViews()
+        configConstraints()
+    }
+    
+    private func addSubViews() {
+        addSubview(logoImageView)
+        addSubview(titleLabel)
     }
     
     required init?(coder: NSCoder) {
