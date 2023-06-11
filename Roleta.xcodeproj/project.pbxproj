@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		C47757422A35DD2C00A3880E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47757412A35DD2C00A3880E /* AppDelegate.swift */; };
 		C47757442A35DD2C00A3880E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47757432A35DD2C00A3880E /* SceneDelegate.swift */; };
-		C47757462A35DD2C00A3880E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47757452A35DD2C00A3880E /* ViewController.swift */; };
+		C47757462A35DD2C00A3880E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47757452A35DD2C00A3880E /* HomeViewController.swift */; };
 		C477574B2A35DD2E00A3880E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C477574A2A35DD2E00A3880E /* Assets.xcassets */; };
 		C477574E2A35DD2E00A3880E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C477574C2A35DD2E00A3880E /* LaunchScreen.storyboard */; };
+		C47757592A35E64B00A3880E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47757582A35E64B00A3880E /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C477573E2A35DD2C00A3880E /* Roleta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roleta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47757412A35DD2C00A3880E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C47757432A35DD2C00A3880E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C47757452A35DD2C00A3880E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C47757452A35DD2C00A3880E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C477574A2A35DD2E00A3880E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C477574D2A35DD2E00A3880E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C477574F2A35DD2E00A3880E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47757582A35E64B00A3880E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,8 @@
 		C47757402A35DD2C00A3880E /* Roleta */ = {
 			isa = PBXGroup;
 			children = (
+				C47757572A35E63200A3880E /* Home */,
 				C47757552A35DFA000A3880E /* Resource */,
-				C47757452A35DD2C00A3880E /* ViewController.swift */,
 				C477574F2A35DD2E00A3880E /* Info.plist */,
 			);
 			path = Roleta;
@@ -70,6 +72,23 @@
 				C477574C2A35DD2E00A3880E /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		C47757572A35E63200A3880E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C477575A2A35E65000A3880E /* Screen */,
+				C47757452A35DD2C00A3880E /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C477575A2A35E65000A3880E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C47757582A35E64B00A3880E /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47757462A35DD2C00A3880E /* ViewController.swift in Sources */,
+				C47757592A35E64B00A3880E /* HomeScreen.swift in Sources */,
+				C47757462A35DD2C00A3880E /* HomeViewController.swift in Sources */,
 				C47757422A35DD2C00A3880E /* AppDelegate.swift in Sources */,
 				C47757442A35DD2C00A3880E /* SceneDelegate.swift in Sources */,
 			);
