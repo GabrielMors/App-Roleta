@@ -52,7 +52,7 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let person = person, listPerson[indexPath.row] === person {
-            alert.showAlert(title: "Muitoo bom", message: "Agora é sua vez, pague a conta 🤪")
+            alert.showAlert(title: "Muitoo bom", message: "Agora é sua vez \(person.name), pague a conta 🤪")
             listPerson.removeAll()
         } else {
             alert.showAlert(title: "Uffa", message: "você escapou dessa vez 🥳")
