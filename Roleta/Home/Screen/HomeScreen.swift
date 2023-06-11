@@ -7,8 +7,18 @@
 
 import UIKit
 
+protocol HomeScreenProtocol: AnyObject {
+    func tappedRaffleNumberButton()
+}
+
 class HomeScreen: UIView {
 
+    private weak var delegate: HomeScreenProtocol?
+    
+    public func delegate(delegate: HomeScreenProtocol) {
+        self.delegate = delegate
+    }
+    
     lazy var logoImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -49,7 +59,7 @@ class HomeScreen: UIView {
     }()
     
     @objc private func tappedButton() {
-        
+        delegate?.tappedRaffleNumberButton()
     }
     
     lazy var tableView: UITableView = {
