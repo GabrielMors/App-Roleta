@@ -53,8 +53,8 @@ class HomeScreen: UIView {
         button.backgroundColor = UIColor.blue
         button.clipsToBounds = true
         button.layer.cornerRadius = 10
-        button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
         return button
     }()
     
@@ -120,7 +120,6 @@ class HomeScreen: UIView {
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
-            
         ])
     }
 }
